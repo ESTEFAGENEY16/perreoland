@@ -58,7 +58,7 @@ header {
     background-color: rgb(90, 45, 74);
 }
 #portada {
-    background-image: url(../CSS/IMAGENES/portada.jpeg);
+    background-image: url(imagenes/portada.jpeg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
