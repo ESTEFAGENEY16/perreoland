@@ -1,0 +1,467 @@
+
+
+body {
+    background-color: black;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+.todo {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+img {
+    width: 100%;
+}
+h1, h2, h3 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+}
+a:link, a:visited {
+    color: rgb(181, 103, 155);
+    text-decoration: none;
+}
+a:hover {
+    color: white;
+}
+a:active {
+    color: rgb(90, 45, 74);
+}
+header {
+    background-color: rgb(181, 103, 155);
+    padding: 10px;
+    text-align: center;
+}
+#logo {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30px;
+    color: white;
+}
+.mainmenu ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0 0;
+}
+.mainmenu li {
+    padding: 5px;
+}
+.mainmenu a:link, .mainmenu a:visited {
+    color: black;
+    padding: 5px;
+}
+.mainmenu a:hover {
+    background-color: black;
+    color: white;
+}
+.mainmenu a:active {
+    background-color: rgb(90, 45, 74);
+}
+#portada {
+    background-image: url(../CSS/IMAGENES/portada.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 40px 10px;
+    text-align: center;
+}
+#portada p {
+    margin: 0;
+}
+#portada h1 {
+    font-size: 50px;
+    color: white;
+    margin: 10px 0;
+}
+#portada .destacado {
+    color: rgb(181, 103, 155);
+    font-weight: bold;
+}
+#fecha {
+    padding: 30px 10px;
+    text-align: center;
+}
+#fecha p {
+    margin: 5px 0;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+}
+#fecha .dias {
+    font-size: 45px;
+    color: rgb(90, 45, 74);
+}
+#fecha .destacado {
+    font-size: 45px;
+    color: rgb(181, 103, 155);
+}
+.boton:link, .boton:visited {
+    display: block;
+    width: 250px;
+    margin: 20px auto 0 auto;
+    padding: 10px;
+    color: white;
+    border: rgb(181, 103, 155) 3px solid;
+    border-radius: 30px;
+}
+.boton:hover {
+    background-color: rgb(181, 103, 155);
+}
+#artistas h2 {
+    font-size: 50px;
+    color: white;
+}
+#artistas article {
+    background-color: rgb(181, 103, 155);
+}
+#artistas article div {
+    padding: 20px;
+    text-align: center;
+    color: black;
+}
+#artistas .destacado {
+    font-weight: bold;
+}
+#artistas h3 {
+    color: white;
+}
+#boleteria h2 {
+    background-color: rgb(90, 45, 74);
+    color: white;
+    padding: 15px;
+    margin: 0;
+}
+#boleteria article {
+    padding: 20px;
+}
+#alojamiento {
+    padding: 20px;
+    text-align: center;
+}
+#alojamiento h2 {
+    font-size: 35px;
+    color: rgb(181, 103, 155);
+}
+#alojamiento p {
+    font-size: 12px;
+}
+#alojamiento .destacado {
+    font-size: 14px;
+    font-weight: bold;
+    color: rgb(181, 103, 155);
+}
+.zonas article {
+    margin-bottom: 20px;
+}
+.zonas h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    color: white;
+}
+#patrocinadores h2 {
+    background-color: rgb(181, 103, 155);
+    color: white;
+    padding: 15px;
+    margin: 0;
+}
+.logos {
+    padding: 20px;
+    text-align: center;
+}
+.logos img {
+    
+    width: 120px;
+    margin: 10px;
+}
+footer {
+    background-color: rgb(90, 45, 74);
+    padding: 20px;
+    text-align: center;
+}
+footer ul {
+   list-style: none;
+    padding: 0;
+    margin: 0;
+}
+footer h2 {
+    font-size: 16px;
+    color: white;
+}
+footer a:link, footer a:visited {
+    color: white;
+    font-size: 12px;
+}
+footer a:hover {
+    color: rgb(181, 103, 155);
+}
+
+@media (min-width:768px){
+
+    .mainmenu ul{
+        display:flex;
+    }
+
+    #artistas article{
+        display:flex;
+    }
+
+    #artistas article img{
+        width:50%;
+    }
+
+    #artistas article div{
+        width:50%;
+    }
+
+    .zonas{
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:space-between;
+    }
+
+    .zonas article{
+        width:48%;
+    }
+
+    .logos{
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+     footer nav ul{
+        display:flex;
+        justify-content:center;
+        gap:20px;
+    }
+
+    footer div ul{
+        display:flex;
+        justify-content:center;
+        gap:20px;
+    }
+
+}
+
+@media (min-width:1200px){
+
+    .zonas article{
+        width:23%;
+    }
+
+}
+
+/* Ajustes generales del header para layout en móvil */
+header {
+    background-color: rgb(181, 103, 155);
+    padding: 15px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+/* Ocultamos el checkbox real */
+#menu-toggle {
+    display: none;
+}
+
+/* Estilo del botón de hamburguesa (tres líneas) */
+.menu-icon {
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+    user-select: none;
+}
+
+/* Ocultar menú desplegable por defecto en móviles */
+.mainmenu {
+    width: 100%;
+    display: none;
+}
+
+/* Mostrar el menú cuando el checkbox está activado */
+#menu-toggle:checked ~ .mainmenu {
+    display: block;
+}
+
+/* Estilos de la lista en pantallas pequeñas */
+.mainmenu ul {
+    list-style: none;
+    padding: 10px 0 0 0;
+    margin: 10px 0 0 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.mainmenu li {
+    padding: 8px 0;
+}
+
+.mainmenu a:link, .mainmenu a:visited {
+    color: black;
+    display: block;
+    padding: 8px;
+    font-weight: bold;
+}
+
+.mainmenu a:hover {
+    background-color: black;
+    color: white;
+}
+
+/* Configuración para pantallas medianas/escritorio (desde 768px) */
+@media (min-width: 768px) {
+    /* Ocultamos el botón del menú en pantallas grandes */
+    .menu-icon {
+        display: none;
+    }
+
+    /* Aseguramos que el menú siempre sea visible y flexible */
+    .mainmenu {
+        display: block !important;
+        width: auto;
+    }
+
+    .mainmenu ul {
+        display: flex;
+        gap: 15px;
+        border-top: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .mainmenu li {
+        padding: 0;
+    }
+}
+
+/* Sección de ancho completo (100% de la pantalla) */
+.seccion-hero {
+    width: 100%;
+    min-height: 80vh; /* Ocupa al menos el 80% de la altura de la pantalla */
+    background-color: rgb(90, 45, 74); /* Color secundario de tu paleta */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../CSS/IMAGENES/portada.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    /* Centrado con Flexbox */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 20px;
+    box-sizing: border-box;
+}
+
+/* Contenedor interno limitado para mantener buena legibilidad */
+.contenedor-contenido {
+    max-width: 1000px;
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+
+.contenedor-contenido h2 {
+    font-size: 32px;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.contenedor-contenido p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+/* Botón adaptable */
+.boton-destacado:link, 
+.boton-destacado:visited {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: rgb(181, 103, 155);
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+}
+
+.boton-destacado:hover {
+    background-color: white;
+    color: black;
+}
+
+/* Ajustes Responsive para Pantallas Más Grandes */
+@media (min-width: 768px) {
+    .contenedor-contenido h2 {
+        font-size: 48px;
+    }
+
+    .contenedor-contenido p {
+        font-size: 20px;
+    }
+}
+/* Sección principal de la cuenta regresiva */
+#cuenta-regresiva {
+    background-color: black;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#cuenta-regresiva h2 {
+    color: rgb(181, 103, 155);
+    font-size: 32px;
+    margin-bottom: 25px;
+}
+
+/* Grid adaptable para las tarjetas de tiempo */
+.contador-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas en móviles */
+    gap: 15px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Cada tarjeta/bloque individual */
+.bloque-tiempo {
+    background-color: rgb(90, 45, 74);
+    border: 2px solid rgb(181, 103, 155);
+    border-radius: 12px;
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bloque-tiempo .numero {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 45px;
+    color: white;
+    line-height: 1;
+}
+
+.bloque-tiempo .etiqueta {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: rgb(181, 103, 155);
+    margin-top: 8px;
+    font-weight: bold;
+}
+
+/* Ajuste para pantallas grandes (4 columnas seguidas) */
+@media (min-width: 768px) {
+    .contador-grid {
+        grid-template-columns: repeat(4, 1fr);
+        max-width: 800px;
+        gap: 20px;
+    }
+
+    #cuenta-regresiva h2 {
+        font-size: 42px;
+    }
+
+    .bloque-tiempo .numero {
+        font-size: 60px;
+    }
+}
